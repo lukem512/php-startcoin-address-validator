@@ -1,15 +1,21 @@
 {
-  "name": "linusu/bitcoin-address-validator",
+  "name": "startcoin-address-validator",
   "type": "library",
-  "description": "A simple, easy to use PHP Bitcoin address validator",
-  "keywords": ["bitcoin", "address", "validation", "validator"],
-  "homepage": "http://github.com/LinusU/bitcoin-address-validator",
+  "description": "A simple, easy to use PHP StartCOIN address validator",
+  "keywords": ["startcoin", "address", "validation", "validator"],
+  "homepage": "https://github.com/lukem512/php-startcoin-address-validator",
   "license": "MIT",
   "authors": [
     {
       "name": "Linus Unnebäck",
       "email": "linus@folkdatorn.se",
       "homepage": "http://linusu.se/",
+      "role": "Developer"
+    },
+    {
+      "name": "Luke Mitchell",
+      "email": "hi@lukemitchell.co",
+      "homepage": "http://lukemitchell.co",
       "role": "Developer"
     }
   ],
@@ -18,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "LinusU\\Bitcoin\\": "src/"
+      "StartCOIN\\": "src/"
     }
   }
 }
