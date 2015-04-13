@@ -1,16 +1,16 @@
 <?php
 
-namespace LinusU\Bitcoin;
+namespace StartCOIN;
 
 class AddressValidator {
 
     CONST MAINNET = "MAINNET";
     CONST TESTNET = "TESTNET";
 
-    CONST MAINNET_PUBKEY = "00";
+    CONST MAINNET_PUBKEY = "7D";
     CONST MAINNET_SCRIPT = "05";
 
-    CONST TESTNET_PUBKEY = "6F";
+    CONST TESTNET_PUBKEY = "7F";
     CONST TESTNET_SCRIPT = "C4";
 
     static public function typeOf($addr) {

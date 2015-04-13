@@ -2,16 +2,9 @@
 
 require_once 'src/AddressValidator.php';
 
-use \LinusU\Bitcoin\AddressValidator;
+use \StartCOIN\AddressValidator;
 
 class AddressValidatorTest extends PHPUnit_Framework_TestCase {
-
-    /*
-
-    Data from the official bitcoin client:
-    https://github.com/bitcoin/bitcoin/tree/master/src/test/data
-
-    */
 
     protected $invalidAddrs = [
         '',
@@ -67,22 +60,22 @@ class AddressValidatorTest extends PHPUnit_Framework_TestCase {
     ];
 
     protected $validAddrs = [
-        '1AGNa15ZQXAZUgFiqJ2i7Z2DPU2J6hW62i',
-        '1Ax4gZtb7gAit2TivwejZHYtNNLT18PUXJ',
-        '1C5bSj1iEGUgSTbziymG7Cn18ENQuT36vv',
-        '1Gqk4Tv79P91Cc1STQtU3s1W6277M2CVWu',
-        '1JwMWBVLtiqtscbaRHai4pqHokhFCbtoB4',
-        '19dcawoKcZdQz365WpXWMhX6QCUpR9SY4r',
-        '13p1ijLwsnrcuyqcTvJXkq2ASdXqcnEBLE'
+        'sWzkFZhn2S9hDrcwr9me5XQezFs2x5dP8d',
+        'sWhpzSdEJjGE7pUzKDca879C1uNChrct8H',
+        'saKkyZ7MCgJ13gcF8hdEB4idc8gAYku1Jg',
+        'sWKJZGKiFRV2uNjYQHWD3X3edDFzmJx6Fj',
+        'sK9JQjNqq5Mvd5QqtEx2gExpsXTbTofxY6',
+        'sM4JvUEs6V4eUiQXdaUYSqUG8s7m6ciCkg',
+        'sgUNWhHbdjCvyfE9KcJUaAAbRifNsf5Mie'
     ];
 
     protected $validTestnet = [
-        'mo9ncXisMeAoXwqcV5EWuyncbmCcQN4rVs',
-        'n3ZddxzLvAY9o7184TB4c6FJasAybsw4HZ',
-        'n3LnJXCqbPjghuVs8ph9CYsAe4Sh4j97wk',
-        'mhaMcBxNh5cqXm4aTQ6EcVbKtfL6LGyK2H',
-        'mizXiucXRCsEriQCHUkCqef9ph9qtPbZZ6',
-        'myoqcgYiehufrsnnkqdqbp69dddVDMopJu'
+        'tLCB14RsgKctcRx8XeTdZDBbdLELDa6kft',
+        'tVrMvAmaTpLEUCZdxMULKbiymg5oE32Hbm',
+        'tNdiGHTyi6JhmeDLsFJq9KbtjuSPCmrtvU',
+        'tBCe1ZDm9GWV4NxecFaKAsxGTWshZpzRqi',
+        'tGvqCxan3HQwB1qGri3JhND3ws359wNqKJ',
+        'tSMCQAvmzR58Tgm4daFGExp1MbiCHqCWei'
     ];
 
     protected $scriptAddrs = [
