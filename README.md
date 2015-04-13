@@ -1,36 +1,36 @@
 # php-bitcoin-address-validator
 
-A simple, easy to use PHP Bitcoin address validator
+A simple, easy to use PHP StartCOIN address validator
 
 ## Usage
 
 Quick start:
 
 ```php
-use \LinusU\Bitcoin\AddressValidator;
+use \StartCOIN\AddressValidator;
 
 // This will return false, indicating invalid address.
 AddressValidator::isValid('blah');
 
 // This is a valid address and will thus return true.
-AddressValidator::isValid('1AGNa15ZQXAZUgFiqJ2i7Z2DPU2J6hW62i');
+AddressValidator::isValid('sWzkFZhn2S9hDrcwr9me5XQezFs2x5dP8d');
 
 // This is a Testnet address, it's valid and the function will return true.
-AddressValidator::isValid('mo9ncXisMeAoXwqcV5EWuyncbmCcQN4rVs', AddressValidator::TESTNET);
+AddressValidator::isValid('tLCB14RsgKctcRx8XeTdZDBbdLELDa6kft', AddressValidator::TESTNET);
 ```
 
 ## API
 
 ### `isValid($addr, $version)`
 
-- `$addr`: A bitcoin address
+- `$addr`: A StartCOIN address
 - `$version`: The version to test against, defaults to `MAINNET`
 
 Returns a boolean indicating if the address is valid or not.
 
 ### `typeOf($addr)`
 
-- `$addr`: A bitcoin address
+- `$addr`: A StartCOIN address
 
 Returns the type of the address.
 
